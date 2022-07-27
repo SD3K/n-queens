@@ -143,10 +143,6 @@ describe('Board', function() {
     ];
     board = new Board(matrix);
 
-    it('should find a majorDiagonal conflict at index 0', function() {
-      expect(board.hasMajorDiagonalConflictAt(0)).to.be.equal(true);
-    });
-
     it('should not find a row conflict', function() {
       expect(board.hasAnyRowConflicts()).to.be.equal(false);
     });
